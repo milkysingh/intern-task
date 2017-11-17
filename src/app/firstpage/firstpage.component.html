@@ -1,0 +1,16 @@
+<div class="container">
+    <input  *ngIf="toggleShow" type="text" [(ngModel)]="bodyText"value="gdgsg" >
+  <div class="row">
+    <div class="col-xs-6">
+
+        <button type="button" class="btn btn-primary-outline pull-left" (click)='popup()' *ngIf="!toggleShow"> Open Modal</button>
+        <button type="button" class="btn btn-primary-outline pull-left" (click)='popup()' *ngIf="toggleShow"> Close Modal</button>
+
+    </div>
+    <div class="col-xs-6">
+        <button type="button" class="btn btn-primary-outline pull-right" (click)="nextPage();"><i class="fa fa-plus"></i> Next Page</button>
+    </div>
+  </div>
+  {{bodyText}}
+
+</div>
