@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 })
 export class FirstpageComponent implements OnInit {
   toggleShow= false;
-
+  bodyText;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -20,9 +20,11 @@ export class FirstpageComponent implements OnInit {
     }
     popup() {
 this.toggleShow = !this.toggleShow;
+if(this.bodyText){
+this.bodyText='';
+}
 
 
     }
-
 
 }
